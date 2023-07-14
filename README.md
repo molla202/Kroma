@@ -87,8 +87,17 @@ docker logs -f kroma-node
 docker logs -f kroma-validator
 ```
 
+## bazı komutlar
 
-
-
-
+### durdur başlat reset validator
+```
+cd
+cd kroma-up
+```
+```
+docker compose --profile validator down -v
+```
+```
+docker compose --profile validator up -d
+```
 
