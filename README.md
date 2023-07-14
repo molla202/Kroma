@@ -65,8 +65,10 @@ docker compose --profile validator up -d
 ```
 
 ## Deposit validator
+not: bize sepholia eth lazım en az 0.1 denmiş deposit işlemi için. aşağıdaki tam 0.1 için
+
 ```
-docker compose exec kroma-validator kroma-validator deposit --amount <amount-wei> # must be set
+docker exec kroma-validator kroma-validator deposit --amount 100000000000000000
 ```
 ## Logları kontrol ediyoruz...
 ```
