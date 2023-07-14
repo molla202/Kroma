@@ -44,7 +44,7 @@ not:( KROMA_VALIDATOR__HD_PATH="m/44'/60'/0'/0" ) metemask cüzdna olsuturuyoruz
 
 ![image](https://github.com/molla202/Kroma/assets/91562185/ad4dff0b-de1f-4023-af3c-038f77e09af6)
 
-## node baslatıyoruz
+## node baslatıyoruz ( sadece node kuracaksanız bunu kurun validatorse atlayın validatore çalıştırdıysanız docker compose --profile vanilla down -v)
 not öncelikle düzeltme yapmamız lazım bir dosyada  krome node kısmında bir user: root eklıyoruz yetki verme mevzusu sona ctrl+x y enterla kaydedip cıkıyoruz
 ```
 nano docker-compose.yml
@@ -60,7 +60,14 @@ not: loga bakalım akıyormu
 docker logs -f kroma-node
 ```
 
+
 ## validator başlatıyoruz
+not öncelikle düzeltme yapmamız lazım bir dosyada  krome node kısmında bir user: root eklıyoruz yetki verme mevzusu sona ctrl+x y enterla kaydedip cıkıyoruz
+```
+nano docker-compose.yml
+```
+
+![image](https://github.com/molla202/Kroma/assets/91562185/f3d8e2a1-e7e4-493f-b119-08e07abc71b6)
 ```
 docker compose --profile validator up -d
 ```
