@@ -36,11 +36,19 @@ git clone https://github.com/kroma-network/kroma-up.git && cd kroma-up
 ./startup.sh
 ```
 ## env yapılandırması
+### 1ci yontem 
 ```
 vim .env
 ```
+### 2ci standart yöntem
+```
+nano .env
+```
 not:( KROMA_VALIDATOR__HD_PATH="m/44'/60'/0'/0" ) metemask cüzdna olsuturuyoruz yada boş ama içinde sepholia mal bulunan cüzdanda olur çünkü private keyini alıp yazıcaz ona göre. kalan kısım aynı şekilde eksikleri tamamlayınız
-çıkmak için    :wq yazıyoruz.enterla
+
+vim ile yaptıysanız    girerken soru sorarsa r deyin  çıkmak için    :wq yazıyoruz.enterla
+
+eğer nano ile yaptıysanız yon tuslarıyla gelim direk yazarak değiştirirsiniz ctrl+x y enter
 
 ![image](https://github.com/molla202/Kroma/assets/91562185/ad4dff0b-de1f-4023-af3c-038f77e09af6)
 
