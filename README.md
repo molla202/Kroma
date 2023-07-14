@@ -2,13 +2,14 @@
   <h1>KROMA REHBER </h1>
 </div>
 
+![kroma-og](https://github.com/molla202/Kroma/assets/91562185/61044d01-0239-400c-b0f8-4a7f78679f43)
 
 
  * [Topluluk kanalımız](https://t.me/corenodechat)<br>
  * [Topluluk Twitter](https://twitter.com/corenodeHQ)<br>
- * [CreditCoin Website](https://creditcoin.org/)<br>
- * [Discord](https://discord.com/invite/creditcoin)<br>
- * [Twitter](https://twitter.com/Creditcoin)<br>
+ * [Kroma Website](https://kroma.network/)<br>
+ * [Discord](https://discord.gg/qvVNbgmK)<br>
+ * [Twitter](https://twitter.com/kroma_network)<br>
 
 
 ## Sistem Gereksinimleri
