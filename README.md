@@ -26,3 +26,35 @@ sudo apt update; sudo apt upgrade
 ```bash
 sudo apt-get update && sudo apt install jq git && sudo apt install apt-transport-https ca-certificates curl software-properties-common -y && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - && sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" && sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin && sudo apt-get install docker-compose-plugin 
 ```
+## Dosyaları çekiyoruz
+```
+git clone https://github.com/kroma-network/kroma-up.git && cd kroma-up
+```
+## kuruyoruz
+```
+./startup.sh
+```
+## env yapılandırması
+```
+vim .env
+```
+
+## validator başlatıyoruz
+```
+docker compose --profile validator up -d
+```
+
+## Deposit validator
+```
+docker compose exec kroma-validator kroma-validator deposit --amount <amount-wei> # must be set
+```
+## Logları kontrol ediyoruz...
+```
+docker logs -f kroma-validator
+```
+
+
+
+
+
+
