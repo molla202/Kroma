@@ -67,7 +67,7 @@ sudo apt install docker-compose-plugin -y
 
 cd $HOME && mv kroma-up kroma-up_$(date +%s) 2>/dev/null
 git clone https://github.com/kroma-network/kroma-up.git
-#sudo chmod -R a+rwx kroma-up
+sudo chmod -R a+rwx kroma-up
 cd kroma-up && ./startup.sh
 sed -i.bak s/KROMA_VALIDATOR__PRIVATE_KEY=.*/KROMA_VALIDATOR__PRIVATE_KEY=$PRIVATE_KEY/ $HOME/kroma-up/.env
 sed -i s^L1_RPC_ENDPOINT=.*^L1_RPC_ENDPOINT=$SEPOLIA_RPC_URL^g $HOME/kroma-up/.env
