@@ -12,7 +12,7 @@ bash_profile=$HOME/.bash_profile
 if [ -f "$bash_profile" ]; then
     . $HOME/.bash_profile
 fi
-sleep 1 && curl -s https://raw.githubusercontent.com/molla202/Scripts/main/molla202.sh | bash && sleep 1
+sleep 1 && curl -s https://raw.githubusercontent.com/0xSocrates/Scripts/main/core-node.sh | bash && sleep 1
 if ss -tulpen | awk '{print $5}' | grep -q ":7300$" ; then
 	echo -e "\e[31mInstallation is not possible, port 7300 already in use.\e[39m"
 	exit
