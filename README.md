@@ -19,6 +19,15 @@
 | RAM	| 4+ GB |
 | Storage	| 250 GB SSD |
 
+# Oto Kurulum
+```
+wget -q -O kroma.sh https://raw.githubusercontent.com/molla202/Kroma/main/kroma.sh && sudo chmod +x kroma.sh && sudo /bin/bash kroma.sh
+```
+* Not:
+  * kurulum sırasında çakışan port olursa kurmaz. 
+  * Kurulum sırasın da mm private key sorar sopolia faucet almış olun. 
+  * Kurulum sırasında rpc soracak infura aalchemy den almanız gerekiyor üye olarak.
+  * Aşağıda manuel kulanıma bir göz atın fikir edinmek için.
 ## Update edelim
 ```bash
 sudo apt update; sudo apt upgrade 
