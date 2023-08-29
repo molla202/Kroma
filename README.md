@@ -23,7 +23,7 @@
 ```
 wget -q -O kroma.sh https://raw.githubusercontent.com/molla202/Kroma/main/kroma.sh && sudo chmod +x kroma.sh && sudo /bin/bash kroma.sh
 ```
-* Not:
+* Not: kurulumun oto ve manuel ve eski kroma sürümü için standarttır. sadece ufak tefek değişiklikler var.
   * kurulum sırasında çakışan port olursa kurmaz. 
   * Kurulum sırasın da mm private key sorar sopolia faucet almış olun. 
   * Kurulum sırasında rpc soracak infura aalchemy den almanız gerekiyor üye olarak.
