@@ -29,7 +29,7 @@ wget -q -O kroma.sh https://raw.githubusercontent.com/molla202/Kroma/main/kroma.
 * Kurulum sırasında rpc soracak [infura](https://www.infura.io/) yada [alchemy](https://dashboard.alchemy.com/) den almanız gerekiyor üye olarak. sepolia ağı rpc oluşturulacak.
 ## Log Komutu
 ```
-cd $HOME/kroma-up/ && docker compose --profile validator logs -f
+cd $HOME/kroma-up/ && docker compose --profile validator logs -f --since 1m
 ```
 ### Yetki konusu
 👉 Not: kroma-up dosyasının yetki kısmında değişiklik gerekiyor aşağıdaki kodu yazın. kurulum bittikten sonra. ve `reboot` yazarak reset atın olmazza tekrar yazıp tekrar reboot edin sonra log komutu ile bakınız permisson denied hatası almıyorsanız akıyordur zaten yok hata verip exit code çıkar bu işlemi yapmassanız
