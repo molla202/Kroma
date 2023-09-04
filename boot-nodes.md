@@ -6,7 +6,7 @@ sed -i.bak s/KROMA_GETH__BOOT_NODES=.*/KROMA_GETH__BOOT_NODES=enode://eb7d517a51
 sed -i.bak s/KROMA_NODE__BOOT_NODES=.*/KROMA_NODE__BOOT_NODES=enr:-J24QNScwSQ9xyCI9TuC4z55f1mUTH7UwwU6XrdRkXTry5okQDMDQVzeGXKGlCMGCjW09zZdGCLBppgx7I-IlyAHTL2GAYora1atgmlkgnY0gmlwhCvKZq2Hb3BzdGFja4O2EgCJc2VjcDI1NmsxoQI5RRcWthXDZBQIWy2V5f0F6vU5ULQ7Onz0J-jOwom-O4N0Y3CCIyuDdWRwgiMr,enr:-J24QOJ08WAtwmF8ZQf9xMYc1XNAheQYbWQmyDdsMJywUD1SLG6gfhGqgJp-wUgZTtIazd8WwUf9ziehfxF-grArB32GAYorbLu4gmlkgnY0gmlwhDRPliiHb3BzdGFja4O2EgCJc2VjcDI1NmsxoQJxu9bJv02qtIehfeOmtA8B_RWqZylpHOGOOBuWQo-xXoN0Y3CCIyuDdWRwgiMr/ $HOME/kroma-up/.env
 ```
 ```
-cd $HOME/kroma-up/ && docker compose --profile validator up -d
+cd $HOME/kroma-up/ && docker compose --profile validator restart
 ```
 ```
 cd $HOME/kroma-up/ && docker compose --profile validator logs -f --since 1m
